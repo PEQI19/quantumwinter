@@ -11,17 +11,23 @@ The team called "Quantum Winter" secured financial transactions by using quantum
 The final project implemented is "Quantum-Cheque Protocol" that is present on the Quantum Protocol Zoo repository.
 [Quantum Cheque Protocol](https://wiki.veriqloud.fr/index.php?title=Quantum_Cheque)
 
-settings for simulaqron:
+## requirements:
+
+- tqdm
+- pybind11
+- projectq
+
+## settings for simulaqron:
 ```
 simulaqron reset && simulaqron stop && simulaqron set backend projectq && simulaqron set max-qubits 50 && simulaqron set recv-timeout 1000 && simulaqron start
 ```
 
-to ensure swap_test is working :
+## to ensure swap_test is working :
 ```
 python quantumwinter/swap_test.py
 ```
 
-to start a cheque protocol holder Alice send M dollars using a quantum M$ cheque to Charlie through bank Bob  :
+## to start a cheque protocol holder Alice send M dollars using a quantum M$ cheque to Charlie through bank Bob  :
 ```
 python quantumwinter/quantum_cheque.py
 ```
